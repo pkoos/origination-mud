@@ -1,10 +1,10 @@
 all:
-	g++ -std=c++20 -o MudExec.o main.cpp MudServer.cpp MudEntity.cpp
+	g++ -std=c++20 -o orig.o origination.cpp MudServer.cpp MudEntity.cpp
 
 clean:
 	rm *.o
 run:
-	./MudExec
+	./orig.o
 
 tests:
 	g++ -std=c++20 -o Tests.o MudEntity.cpp MudEntity.test.cpp
